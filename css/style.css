@@ -49,6 +49,10 @@ p{
   left:50%;
   transform: translateX(-50%);
   cursor:pointer;
+  transition: all 0.5s;
+}
+.arrow:hover{
+  background-color: lightgray;
 }
 
 .arrow_up{
@@ -76,4 +80,5 @@ p{
 .active{
   filter: brightness(100%);
   border: 5px solid lightgray;
+  transition: all 0.5s;
 }
