@@ -1,0 +1,19 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 1300px;
+  height: 600px;
+  margin:auto;
+  margin-top: 150px;
+  background-color: red;
+}
+
+.big_image{
+  width: 80%;
+  height: 100% ;
+  background-color: blue;
+}
