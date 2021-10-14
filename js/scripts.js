@@ -24,3 +24,9 @@ const text = [
   'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
 ];
 //************************************************* */
+
+const carouselSideElement = document.querySelector(".small_images_container");
+
+for (let i = 0; i < items.length; i++) {
+  carouselSideElement.innerHTML += `<div class="small_image"><img src=${items[i]}></img></div>`;
+}
