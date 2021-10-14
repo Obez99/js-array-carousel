@@ -26,7 +26,23 @@ const text = [
 //************************************************* */
 
 const carouselSideElement = document.querySelector(".small_images_container");
+const arrowUpElement = document.querySelector("arrow_up");
+const arrowDownElement = document.querySelector("arrow_down");
+
+
+
 
 for (let i = 0; i < items.length; i++) {
-  carouselSideElement.innerHTML += `<div class="small_image"><img src=${items[i]}></img></div>`;
+  let activeStatus = "";
+  if (i === 0) {
+    activeStatus = "active";
+  }
+
+  const smallImage = `<div class="small_image ${activeStatus}"><img src=${items[i]} alt=${title[i]}-img></img></div>`;
+  carouselSideElement.innerHTML += smallImage;
 }
+
+
+
+
+

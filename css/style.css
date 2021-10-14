@@ -49,6 +49,7 @@ p{
   left:50%;
   transform: translateX(-50%);
   z-index: 1;
+  cursor: pointer;
 }
 
 .arrow_up{
@@ -71,4 +72,9 @@ p{
   height: calc(100%  / 5);
   background-color: black;
   filter:brightness(50%)
+}
+
+.active{
+  filter: brightness(100%);
+  border: 5px solid lightgray;
 }
